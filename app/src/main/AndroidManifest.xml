@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.myapp">
+        <activity
+            android:name=".registeredcourses"
+            >
+
+        </activity>
+        <activity android:name=".regisForm" />
+        <activity
+            android:name=".login"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".ViewCourseAdapter" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".ViewCourseModel" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".ViewClassesActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".spalshActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

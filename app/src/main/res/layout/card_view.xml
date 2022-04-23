@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/primaryLightColor"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/comp_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/comp_logo" />
+
+        <TextView
+            android:id="@+id/course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/comp_logo"
+            android:text="@string/course_name"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/course_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/course_name"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/comp_logo"
+            android:drawablePadding="2dp"
+            android:text="@string/course_number"
+            android:textColor="@color/primaryTextColor" />
+
+        <TextView
+            android:id="@+id/instructor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/course_number"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/comp_logo"
+            android:drawablePadding="2dp"
+            android:text="@string/instructor_name"
+            android:textColor="@color/primaryTextColor" />
+
+        <TextView
+            android:id="@+id/credit_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/comp_logo"
+            android:layout_below="@id/instructor"
+            android:drawablePadding="2dp"
+            android:text="@string/credit_hours"
+            android:textColor="@color/primaryTextColor" />
+
+<!--        <Button-->
+<!--            android:id="@+id/addbtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignStart="@+id/course_number"-->
+<!--            android:layout_alignBottom="@+id/course_number"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginStart="135dp"-->
+<!--            android:layout_marginEnd="13dp"-->
+<!--            android:layout_marginBottom="3dp"-->
+<!--            android:text="@string/add" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/dropbtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_above="@+id/credit_hour"-->
+<!--            android:layout_alignStart="@+id/credit_hour"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginStart="138dp"-->
+<!--            android:layout_marginEnd="13dp"-->
+<!--            android:layout_marginBottom="-26dp"-->
+<!--            android:text="@string/drop" />-->
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
